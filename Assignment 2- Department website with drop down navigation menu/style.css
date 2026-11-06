@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F1EA;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #641B32;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 23px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 16px;
+}
+
+nav {
+    background-color: #3F1424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #A65A70;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 190px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: #641B32;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #F7E8E9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section {
+    background-color: white;
+    width: 85%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #641B32;
+    border-bottom: 2px solid #C9A77C;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #641B32;
+    margin-top: 15px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+.college-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #641B32;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F7F1EA;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #641B32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    section {
+        width: 95%;
+        padding: 18px;
+    }
+
+    .college-image {
+        height: 220px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
